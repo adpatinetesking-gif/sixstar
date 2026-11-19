@@ -1,0 +1,88 @@
+<title>Six Star Clipper Legal</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600&display=swap">
+<style>
+/* Layout: una columna de lectura (~65 car.), cabecera de marca con las 6 estrellas, dos documentos con ancla */
+:root {
+  --bg: #f6f5fa; --fg: #17141f; --muted: #5c5770; --line: #dcd8e6; --accent: #d9196a; --star: #c98a00;
+  --display: "Archivo Black", "Arial Black", Impact, sans-serif;
+  --body: "Inter", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #120f19; --fg: #ece9f4; --muted: #a39db6; --line: #2d2839; --accent: #ff4d8d; --star: #ffd23f; color-scheme: dark } }
+:root[data-theme="dark"] { --bg: #120f19; --fg: #ece9f4; --muted: #a39db6; --line: #2d2839; --accent: #ff4d8d; --star: #ffd23f; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 16px; line-height: 1.65;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.wrap { max-width: 42rem; margin: 0 auto; padding-block: 48px 72px; display: grid; gap: 40px; }
+header { display: grid; gap: 10px; }
+.stars { color: var(--star); letter-spacing: 6px; font-size: 20px; }
+h1 { font-family: var(--display); font-size: clamp(28px, 6vw, 40px); line-height: 1.1; margin: 0; text-wrap: balance; }
+h1 span { color: var(--accent); }
+.lead { color: var(--muted); margin: 0; }
+nav { display: flex; flex-wrap: wrap; gap: 8px 20px; }
+nav a { color: var(--accent); font-weight: 600; text-decoration: none; }
+nav a:hover, nav a:focus-visible { text-decoration: underline; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+section { display: grid; gap: 4px; border-top: 1px solid var(--line); padding-top: 28px; }
+h2 { font-family: var(--display); font-size: 24px; margin: 0 0 4px; }
+h3 { font-size: 16px; margin: 18px 0 0; }
+p, li { margin: 0; }
+ul { margin: 4px 0 0; padding-left: 1.2em; display: grid; gap: 4px; }
+.meta { color: var(--muted); font-size: 14px; }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="stars" aria-hidden="true">★★★★★★</div>
+    <h1>Six Star <span>Clipper</span></h1>
+    <p class="lead">Herramienta interna de Six Star Games para publicar nuestros clips de videojuegos en nuestras propias redes sociales.</p>
+    <nav aria-label="Documentos">
+      <a href="#condiciones">Condiciones del servicio</a>
+      <a href="#privacidad">Política de privacidad</a>
+    </nav>
+  </header>
+
+  <section id="condiciones">
+    <h2>Condiciones del servicio</h2>
+    <p class="meta">Última actualización: 19 de noviembre de 2026</p>
+
+    <h3>1. Qué es Six Star Clipper</h3>
+    <p>Six Star Clipper es una aplicación de escritorio que usa Six Star Games para preparar clips cortos de videojuegos (GTA 6) y publicarlos en las cuentas oficiales de la marca, entre ellas la cuenta de TikTok @sixstargames. No es un servicio abierto al público: solo la usa el equipo de Six Star Games con sus propias cuentas.</p>
+
+    <h3>2. Uso de TikTok</h3>
+    <p>La aplicación se conecta a TikTok mediante las herramientas oficiales para desarrolladores (Login Kit y Content Posting API). Antes de cada publicación, la persona que gestiona la cuenta revisa el vídeo, el texto y la configuración de privacidad, y decide si se publica. La aplicación no publica nada sin esa revisión.</p>
+
+    <h3>3. Contenido</h3>
+    <p>Los clips muestran directos de creadores de contenido y siempre incluyen el crédito al canal original en la descripción. Si un creador pide que no se publiquen clips suyos, se dejan de publicar y se retiran los ya publicados que pida.</p>
+
+    <h3>4. Responsabilidad</h3>
+    <p>La aplicación se ofrece tal cual, para uso interno. El uso de TikTok también está sujeto a las Condiciones de servicio de TikTok.</p>
+
+    <h3>5. Contacto</h3>
+    <p>Para cualquier consulta, escríbenos por mensaje directo en Instagram (@sixstargamess) o TikTok (@sixstargames).</p>
+  </section>
+
+  <section id="privacidad">
+    <h2>Política de privacidad</h2>
+    <p class="meta">Última actualización: 19 de noviembre de 2026</p>
+
+    <h3>Datos que usamos de TikTok</h3>
+    <ul>
+      <li>El identificador de la cuenta de TikTok conectada (open_id) y su nombre y foto de perfil públicos.</li>
+      <li>Los permisos de acceso (tokens) que TikTok entrega al iniciar sesión, necesarios para subir vídeos.</li>
+      <li>La configuración de publicación de la cuenta (opciones de privacidad, comentarios, dúos y stitch), para mostrarla antes de publicar.</li>
+    </ul>
+
+    <h3>Para qué los usamos</h3>
+    <p>Solo para subir a la cuenta conectada los vídeos que la persona que la gestiona ha revisado y aprobado. No usamos estos datos para publicidad ni para crear perfiles.</p>
+
+    <h3>Dónde se guardan</h3>
+    <p>En el ordenador donde funciona la aplicación, en un archivo local. No se venden ni se comparten con terceros. Los vídeos se envían directamente a los servidores de TikTok.</p>
+
+    <h3>Cuánto tiempo</h3>
+    <p>Mientras la cuenta siga conectada. Al desconectarla, se borran los tokens guardados.</p>
+
+    <h3>Cómo retirar el acceso</h3>
+    <p>En la app de TikTok: Ajustes y privacidad › Seguridad › Apps y servicios, y quita «Six Star Clipper». También puedes pedirnos que borremos cualquier dato por mensaje directo en Instagram (@sixstargamess) o TikTok (@sixstargames).</p>
+  </section>
+</div>
